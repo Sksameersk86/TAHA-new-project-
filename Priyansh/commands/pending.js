@@ -1,11 +1,11 @@
 module.exports.config = {
-	name: "pending",
-	version: "1.0.5",
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-	hasPermssion: 2,
-	description: "Manage bot's waiting messages",
-	commandCategory: "system",
-	cooldowns: 5
+        name: "pending",
+        version: "1.0.5",
+        credits: "𝐒𝐇𝐀𝐀𝐍 𝐊𝐇𝐀𝐍 𝐊",
+        hasPermssion: 2,
+        description: "Manage bot's waiting messages",
+        commandCategory: "system",
+        cooldowns: 5
 };
 
 module.exports.languages = {
@@ -22,7 +22,7 @@ module.exports.languages = {
     "en": {
         "invaildNumber": "%1 is not an invalid number",
         "cancelSuccess": "Refused %1 thread!",
-        "notiBox": "Priyansh BoT Connected Successfully!\nUse +help for more info :>",
+        "notiBox": "𝐒𝐇𝐀𝐀𝐍 𝐁𝐎𝐒𝐒 𝐍𝐄 𝐀𝐏𝐏𝐑𝐎𝐕𝐄 𝐃𝐄 𝐃𝐈𝐘𝐀 𝐀𝐏𝐊𝐄 𝐆𝐑𝐎𝐔𝐏 𝐊𝐎 𝐀𝐁 𝐌𝐀𝐙𝐘 𝐊𝐀𝐑𝐎 𝐄𝐍𝐉𝐎𝐘 𝐊𝐀𝐑𝐎 𝐁𝐎𝐓 𝐉𝐀𝐍𝐔 𝐊𝐎🥀!\nUse +help for more info :>",
         "approveSuccess": "Approved successfully %1 threads!",
 
         "cantGetPendingList": "Can't get the pending list!",
@@ -58,26 +58,26 @@ module.exports.handleReply = async function({ api, event, handleReply, getText }
 }
 
 module.exports.run = async function({ api, event, getText }) {
-	const { threadID, messageID } = event;
+        const { threadID, messageID } = event;
     const commandName = this.config.name;
     var msg = "", index = 1;
 
     try {
-		var spam = await api.getThreadList(100, null, ["OTHER"]) || [];
-		var pending = await api.getThreadList(100, null, ["PENDING"]) || [];
-	} catch (e) { return api.sendMessage(getText("cantGetPendingList"), threadID, messageID) }
+                var spam = await api.getThreadList(100, null, ["OTHER"]) || [];
+                var pending = await api.getThreadList(100, null, ["PENDING"]) || [];
+        } catch (e) { return api.sendMessage(getText("cantGetPendingList"), threadID, messageID) }
 
-	const list = [...spam, ...pending].filter(group => group.isSubscribed && group.isGroup);
+        const list = [...spam, ...pending].filter(group => group.isSubscribed && group.isGroup);
 
     for (const single of list) msg += `${index++}/ ${single.name}(${single.threadID})\n`;
 
     if (list.length != 0) return api.sendMessage(getText("returnListPending", list.length, msg), threadID, (error, info) => {
-		global.client.handleReply.push({
+                global.client.handleReply.push({
             name: commandName,
             messageID: info.messageID,
             author: event.senderID,
             pending: list
         })
-	}, messageID);
+        }, messageID);
     else return api.sendMessage(getText("returnListClean"), threadID, messageID);
 }
