@@ -56,22 +56,22 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("Main Hun Naw Jaaneman ❤️", threadID);
    };
 
-   if ((event.body.toLowerCase() == "Shaan") || (event.body.toLowerCase() == "shaan khan") || (event.body.toLowerCase() == "shan") || (event.body.toLowerCase() == "shaan")) {
+   if ((event.body.toLowerCase() == "taha") || (event.body.toLowerCase() == "taha khan") || (event.body.toLowerCase() == "tahaa") || (event.body.toLowerCase() == "taha")) {
      return api.sendMessage( "Busy HoGa Work Me Main t0o Hun Naw 😘",threadID);
 
        
    };
 
    if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "Owner")) {
-     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝖘𝖍𝖆𝖆𝖓 𝖐𝖍𝖆𝖓☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 𝕊ℍ𝔸𝔸ℕ🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- https://www.facebook.com/profile.php?id=100016828397863\n👋For Any Kind Of Help Contact On Telegram  Username 👉 @Shaankhank335😇", threadID);
+     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- TAHA KHAN☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 TAHA🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- https://www.facebook.com/profile.php?id=\n👋For Any Kind Of Help Contact On Telegram  Username 👉 @😇", threadID);
    };
 
    if ((event.body.toLowerCase() == "tumhe banaya kon hai") || (event.body.toLowerCase() == "tumko banaya kisne")) {
-     return api.sendMessage("Priyansh  ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
+     return api.sendMessage("TAHA  ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
    };
 
   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon ha")) {
-     return api.sendMessage("He is Priyansh. He Gives his name Priyansh everywhare", threadID);
+     return api.sendMessage("He is taha. He Gives his name Priyansh everywhare", threadID);
    };
 
    if ((event.body.toLowerCase() == "shadi karoge") || (event.body.toLowerCase() == "mujhse shadi karoge?")) {
@@ -219,7 +219,11 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("Lob You too", threadID);
    };
 
-   if ((event.body.toLowerCase() == "does the bot love me") || (event.body.toLowerCase() == "does the bot love me")) {
+    if ((event.body.toLowerCase() == "good night") || (event.body.toLowerCase() == "good nite")) {
+     return api.sendMessage("good night too", threadID);
+   };
+
+   if ((event.body.toLowerCase() == "does the bot love me") || (event.body.toLowerCase() == "good night meri jan")) {
      return api.sendMessage("Yes <3", threadID);
    };
 
@@ -241,9 +245,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 
 ${rand}                                        
 
-𝗖𝗿𝗲𝗱𝗶𝘁𝘀:𒁍≛⃝ TAHA KHAN ❥||ㅎ
-
-❖•━━━━━💞━━━━━❖`
+𝗖𝗿𝗲𝗱𝗶𝘁𝘀:𒁍≛⃝ TAHA KHAN ❥
   }
   return api.sendMessage(msg, threadID, messageID);
 };
