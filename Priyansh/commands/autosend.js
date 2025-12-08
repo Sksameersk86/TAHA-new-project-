@@ -2,7 +2,7 @@ const axios = require("axios");
 const crypto = require("crypto");
 
 // ************* CREDIT LOCK SYSTEM *************
-const ORIGINAL_CREDITS = "TAHA-BABU";
+const ORIGINAL_CREDITS = "ARIF-BABU";
 const ORIGINAL_HASH = crypto.createHash("sha256").update(ORIGINAL_CREDITS).digest("hex");
 
 function checkCredits() {
