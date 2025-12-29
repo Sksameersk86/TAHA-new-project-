@@ -66,7 +66,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
       "MintBot cân spam nhưng không có gì đáng để bạn spam."
     ];
     var link = [
-      "https://i.imgur.com/1tUVG85.jpeg",
+      "https://i.imgur.com/1F9BO6c.jpeg",
     ];
 
     var i = 1;
